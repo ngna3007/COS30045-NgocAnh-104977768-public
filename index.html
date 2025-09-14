@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Power Appliances</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo-container">
+                <img src="PowerIcon.png" alt="Power Logo" class="logo" onclick="showPage('home')">
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#" onclick="showPage('home')" class="nav-link active" data-page="home">Home</a></li>
+                <li><a href="#" onclick="showPage('televisions')" class="nav-link" data-page="televisions">Televisions</a></li>
+                <li><a href="#" onclick="showPage('about')" class="nav-link" data-page="about">About Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div id="home-page" class="page active">
+            <section class="hero">
+                <h1>Welcome to Power Appliances</h1>
+                <p>Your trusted partner for energy-efficient home appliances in Australia</p>
+            </section>
+            
+            <section class="content">
+                <h2>Energy Efficiency Matters</h2>
+                <p>In Australia, household appliances account for approximately 30% of home energy consumption. Choosing energy-efficient appliances can significantly reduce your electricity bills and environmental impact.</p>
+                
+                <div class="energy-stats">
+                    <div class="stat-card">
+                        <h3>Average Savings</h3>
+                        <p>Up to $500 per year with energy-efficient appliances</p>
+                    </div>
+                    <div class="stat-card">
+                        <h3>Environmental Impact</h3>
+                        <p>Reduce CO2 emissions by up to 2 tonnes annually</p>
+                    </div>
+                    <div class="stat-card">
+                        <h3>Australian Standards</h3>
+                        <p>All our appliances meet MEPS (Minimum Energy Performance Standards)</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <div id="televisions-page" class="page">
+            <section class="hero">
+                <h1>Energy-Efficient Televisions</h1>
+                <p>Discover our range of power-saving TV models</p>
+            </section>
+            
+            <section class="content">
+                <h2>TV Energy Consumption in Australia</h2>
+                <p>Televisions consume an average of 150-200 watts during operation and can account for up to 12% of household electricity usage. Modern LED and OLED TVs offer significant energy savings compared to older plasma and LCD models.</p>
+                
+                <div class="tv-categories">
+                    <div class="category-card">
+                        <h3>LED TVs</h3>
+                        <p>Energy Star rated models consume 30-50% less power than conventional TVs</p>
+                        <p><strong>Average consumption:</strong> 80-150W</p>
+                    </div>
+                    <div class="category-card">
+                        <h3>OLED TVs</h3>
+                        <p>Premium technology with excellent energy efficiency ratings</p>
+                        <p><strong>Average consumption:</strong> 100-180W</p>
+                    </div>
+                    <div class="category-card">
+                        <h3>Smart Features</h3>
+                        <p>Auto power-off and eco modes reduce standby consumption to under 1W</p>
+                        <p><strong>Standby mode:</strong> <1W</p>
+                    </div>
+                </div>
+                
+                <h3>Australian Energy Label</h3>
+                <p>Look for TVs with 4+ star energy ratings to maximize your savings. A 5-star rated 55" TV can save you up to $100 annually compared to a 2-star model.</p>
+            </section>
+        </div>
+
+        <div id="about-page" class="page">
+            <section class="hero">
+                <h1>About Power Appliances</h1>
+                <p>Leading Australia towards a more energy-efficient future</p>
+            </section>
+            
+            <section class="content">
+                <h2>Our Mission</h2>
+                <p>At Power Appliances, we are committed to helping Australian households reduce their energy consumption while maintaining comfort and convenience. We specialize in energy-efficient appliances that meet the highest Australian standards.</p>
+                
+                <h2>Why Energy Efficiency Matters</h2>
+                <p>Australia has some of the highest electricity prices in the world, making energy efficiency crucial for household budgets. The Australian government's Minimum Energy Performance Standards (MEPS) and Energy Rating Label scheme help consumers make informed choices.</p>
+                
+                <div class="about-stats">
+                    <div class="stat-item">
+                        <h3>15+ Years</h3>
+                        <p>Serving Australian families</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3>50,000+</h3>
+                        <p>Happy customers nationwide</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3>5 Star</h3>
+                        <p>Average energy rating across our range</p>
+                    </div>
+                </div>
+                
+                <h2>Our Commitment</h2>
+                <p>We partner with leading manufacturers to bring you appliances that not only save energy but also deliver exceptional performance. Every product in our range is carefully selected to meet strict energy efficiency criteria.</p>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Nguyen Ngoc Anh (ID: 104977768) | Energy efficiency data sourced from Australian Government Department of Energy | Content and code assistance provided by GenAI</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
