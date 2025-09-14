@@ -31,26 +31,103 @@
     <main>
         <div id="home-page" class="page active">
             <section class="hero">
-                <h1>Welcome to Power Appliances</h1>
-                <p>Your trusted partner for energy-efficient home appliances in Australia</p>
+                <div class="hero-content" data-aos="fade-up" data-aos-duration="1000">
+                    <div class="hero-icon">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <h1>Welcome to Power Appliances</h1>
+                    <p>Your trusted partner for energy-efficient home appliances in Australia</p>
+                    <div class="hero-buttons" data-aos="fade-up" data-aos-delay="300">
+                        <button class="cta-button" onclick="showPage('televisions')">
+                            <i class="fas fa-tv"></i>
+                            Explore TVs
+                        </button>
+                        <button class="cta-button secondary" onclick="showPage('about')">
+                            <i class="fas fa-info-circle"></i>
+                            Learn More
+                        </button>
+                    </div>
+                </div>
+                <div class="hero-visual" data-aos="fade-left" data-aos-delay="500">
+                    <div class="energy-meter">
+                        <div class="meter-display">
+                            <span class="meter-value" id="energy-meter">0</span>
+                            <span class="meter-unit">kWh Saved</span>
+                        </div>
+                    </div>
+                </div>
             </section>
             
             <section class="content">
-                <h2>Energy Efficiency Matters</h2>
-                <p>In Australia, household appliances account for approximately 30% of home energy consumption. Choosing energy-efficient appliances can significantly reduce your electricity bills and environmental impact.</p>
+                <div class="section-header" data-aos="fade-up">
+                    <h2><i class="fas fa-leaf"></i> Energy Efficiency Matters</h2>
+                    <p class="section-subtitle">Transform your home with smart, sustainable appliance choices</p>
+                </div>
                 
-                <div class="energy-stats">
-                    <div class="stat-card">
-                        <h3>Average Savings</h3>
-                        <p>Up to $500 per year with energy-efficient appliances</p>
+                <div class="feature-grid" data-aos="fade-up" data-aos-delay="200">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-home"></i>
+                        </div>
+                        <h3>Home Energy Impact</h3>
+                        <p>In Australia, household appliances account for approximately 30% of home energy consumption. Make every kilowatt count.</p>
                     </div>
-                    <div class="stat-card">
-                        <h3>Environmental Impact</h3>
-                        <p>Reduce CO2 emissions by up to 2 tonnes annually</p>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h3>Smart Savings</h3>
+                        <p>Energy-efficient appliances can significantly reduce your electricity bills while maintaining superior performance.</p>
                     </div>
-                    <div class="stat-card">
-                        <h3>Australian Standards</h3>
-                        <p>All our appliances meet MEPS (Minimum Energy Performance Standards)</p>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-globe-americas"></i>
+                        </div>
+                        <h3>Environmental Care</h3>
+                        <p>Reduce your carbon footprint and contribute to Australia's sustainable future with eco-friendly choices.</p>
+                    </div>
+                </div>
+                
+                <div class="energy-stats" data-aos="fade-up" data-aos-delay="400">
+                    <div class="stat-card" data-aos="zoom-in" data-aos-delay="100">
+                        <div class="stat-icon">
+                            <i class="fas fa-dollar-sign"></i>
+                        </div>
+                        <div class="stat-number">$500</div>
+                        <h3>Average Annual Savings</h3>
+                        <p>With energy-efficient appliances</p>
+                        <div class="stat-bar">
+                            <div class="stat-progress" style="width: 85%"></div>
+                        </div>
+                    </div>
+                    <div class="stat-card" data-aos="zoom-in" data-aos-delay="200">
+                        <div class="stat-icon">
+                            <i class="fas fa-seedling"></i>
+                        </div>
+                        <div class="stat-number">2T</div>
+                        <h3>CO2 Emissions Reduced</h3>
+                        <p>Per household annually</p>
+                        <div class="stat-bar">
+                            <div class="stat-progress" style="width: 92%"></div>
+                        </div>
+                    </div>
+                    <div class="stat-card" data-aos="zoom-in" data-aos-delay="300">
+                        <div class="stat-icon">
+                            <i class="fas fa-award"></i>
+                        </div>
+                        <div class="stat-number">5★</div>
+                        <h3>MEPS Compliance</h3>
+                        <p>Australian energy standards</p>
+                        <div class="stat-bar">
+                            <div class="stat-progress" style="width: 100%"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="energy-chart-section" data-aos="fade-up" data-aos-delay="600">
+                    <h3><i class="fas fa-chart-pie"></i> Australian Household Energy Breakdown</h3>
+                    <div class="chart-container">
+                        <canvas id="energyChart"></canvas>
                     </div>
                 </div>
             </section>
@@ -58,67 +135,351 @@
 
         <div id="televisions-page" class="page">
             <section class="hero">
-                <h1>Energy-Efficient Televisions</h1>
-                <p>Discover our range of power-saving TV models</p>
+                <div class="hero-content" data-aos="fade-up" data-aos-duration="1000">
+                    <div class="hero-icon">
+                        <i class="fas fa-tv"></i>
+                    </div>
+                    <h1>Energy-Efficient Televisions</h1>
+                    <p>Discover our range of power-saving TV models that deliver stunning visuals while protecting your wallet</p>
+                </div>
+                <div class="hero-visual" data-aos="fade-right" data-aos-delay="500">
+                    <div class="tv-showcase">
+                        <div class="tv-frame">
+                            <div class="tv-screen">
+                                <div class="energy-rating">
+                                    <span class="rating-stars">★★★★★</span>
+                                    <span class="rating-text">5 Star Energy Rating</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </section>
             
             <section class="content">
-                <h2>TV Energy Consumption in Australia</h2>
-                <p>Televisions consume an average of 150-200 watts during operation and can account for up to 12% of household electricity usage. Modern LED and OLED TVs offer significant energy savings compared to older plasma and LCD models.</p>
+                <div class="section-header" data-aos="fade-up">
+                    <h2><i class="fas fa-bolt"></i> TV Energy Consumption in Australia</h2>
+                    <p class="section-subtitle">Make informed choices with our comprehensive energy efficiency guide</p>
+                </div>
                 
-                <div class="tv-categories">
-                    <div class="category-card">
-                        <h3>LED TVs</h3>
-                        <p>Energy Star rated models consume 30-50% less power than conventional TVs</p>
-                        <p><strong>Average consumption:</strong> 80-150W</p>
-                    </div>
-                    <div class="category-card">
-                        <h3>OLED TVs</h3>
-                        <p>Premium technology with excellent energy efficiency ratings</p>
-                        <p><strong>Average consumption:</strong> 100-180W</p>
-                    </div>
-                    <div class="category-card">
-                        <h3>Smart Features</h3>
-                        <p>Auto power-off and eco modes reduce standby consumption to under 1W</p>
-                        <p><strong>Standby mode:</strong> <1W</p>
+                <div class="energy-insight" data-aos="fade-up" data-aos-delay="200">
+                    <div class="insight-card">
+                        <div class="insight-icon">
+                            <i class="fas fa-exclamation-triangle"></i>
+                        </div>
+                        <div class="insight-content">
+                            <h3>Did You Know?</h3>
+                            <p>Televisions consume an average of 150-200 watts during operation and can account for up to 12% of household electricity usage. Modern LED and OLED TVs offer significant energy savings compared to older plasma and LCD models.</p>
+                        </div>
                     </div>
                 </div>
                 
-                <h3>Australian Energy Label</h3>
-                <p>Look for TVs with 4+ star energy ratings to maximize your savings. A 5-star rated 55" TV can save you up to $100 annually compared to a 2-star model.</p>
+                <div class="tv-categories" data-aos="fade-up" data-aos-delay="300">
+                    <div class="category-card modern" data-aos="flip-left" data-aos-delay="100">
+                        <div class="category-header">
+                            <div class="category-icon">
+                                <i class="fas fa-desktop"></i>
+                            </div>
+                            <h3>LED TVs</h3>
+                            <div class="rating-badge">
+                                <span class="stars">★★★★☆</span>
+                            </div>
+                        </div>
+                        <div class="category-body">
+                            <p>Energy Star rated models consume 30-50% less power than conventional TVs</p>
+                            <div class="power-info">
+                                <div class="power-stat">
+                                    <span class="power-label">Average Consumption</span>
+                                    <span class="power-value">80-150W</span>
+                                </div>
+                                <div class="power-stat">
+                                    <span class="power-label">Annual Cost</span>
+                                    <span class="power-value">$65-120</span>
+                                </div>
+                            </div>
+                            <div class="efficiency-bar">
+                                <div class="efficiency-fill" style="width: 75%"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="category-card modern" data-aos="flip-left" data-aos-delay="200">
+                        <div class="category-header">
+                            <div class="category-icon">
+                                <i class="fas fa-tv"></i>
+                            </div>
+                            <h3>OLED TVs</h3>
+                            <div class="rating-badge premium">
+                                <span class="stars">★★★★★</span>
+                            </div>
+                        </div>
+                        <div class="category-body">
+                            <p>Premium technology with excellent energy efficiency ratings and superior picture quality</p>
+                            <div class="power-info">
+                                <div class="power-stat">
+                                    <span class="power-label">Average Consumption</span>
+                                    <span class="power-value">100-180W</span>
+                                </div>
+                                <div class="power-stat">
+                                    <span class="power-label">Annual Cost</span>
+                                    <span class="power-value">$85-145</span>
+                                </div>
+                            </div>
+                            <div class="efficiency-bar">
+                                <div class="efficiency-fill premium" style="width: 90%"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="category-card modern" data-aos="flip-left" data-aos-delay="300">
+                        <div class="category-header">
+                            <div class="category-icon">
+                                <i class="fas fa-cog"></i>
+                            </div>
+                            <h3>Smart Features</h3>
+                            <div class="rating-badge smart">
+                                <span class="smart-badge">AI</span>
+                            </div>
+                        </div>
+                        <div class="category-body">
+                            <p>Auto power-off and eco modes reduce standby consumption to under 1W with intelligent energy management</p>
+                            <div class="power-info">
+                                <div class="power-stat">
+                                    <span class="power-label">Standby Mode</span>
+                                    <span class="power-value">&lt;1W</span>
+                                </div>
+                                <div class="power-stat">
+                                    <span class="power-label">Annual Standby Cost</span>
+                                    <span class="power-value">$2-5</span>
+                                </div>
+                            </div>
+                            <div class="efficiency-bar">
+                                <div class="efficiency-fill smart" style="width: 95%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="energy-label-section" data-aos="fade-up" data-aos-delay="500">
+                    <div class="label-content">
+                        <div class="label-visual">
+                            <div class="energy-label">
+                                <div class="label-header">
+                                    <h4>Australian Energy Label</h4>
+                                </div>
+                                <div class="star-rating">
+                                    <div class="star active"></div>
+                                    <div class="star active"></div>
+                                    <div class="star active"></div>
+                                    <div class="star active"></div>
+                                    <div class="star active"></div>
+                                </div>
+                                <div class="energy-consumption">
+                                    <span class="consumption-value">120</span>
+                                    <span class="consumption-unit">kWh/year</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="label-info">
+                            <h3><i class="fas fa-award"></i> Australian Energy Label Guide</h3>
+                            <p>Look for TVs with 4+ star energy ratings to maximize your savings. A 5-star rated 55" TV can save you up to $100 annually compared to a 2-star model.</p>
+                            <div class="savings-comparison">
+                                <div class="comparison-item">
+                                    <span class="comparison-stars">★★☆☆☆</span>
+                                    <span class="comparison-cost">$180/year</span>
+                                </div>
+                                <div class="vs">vs</div>
+                                <div class="comparison-item">
+                                    <span class="comparison-stars">★★★★★</span>
+                                    <span class="comparison-cost">$80/year</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tv-comparison-chart" data-aos="fade-up" data-aos-delay="700">
+                    <h3><i class="fas fa-chart-bar"></i> TV Energy Consumption Comparison</h3>
+                    <div class="chart-container">
+                        <canvas id="tvChart"></canvas>
+                    </div>
+                </div>
             </section>
         </div>
 
         <div id="about-page" class="page">
             <section class="hero">
-                <h1>About Power Appliances</h1>
-                <p>Leading Australia towards a more energy-efficient future</p>
+                <div class="hero-content" data-aos="fade-up" data-aos-duration="1000">
+                    <div class="hero-icon">
+                        <i class="fas fa-leaf"></i>
+                    </div>
+                    <h1>About Power Appliances</h1>
+                    <p>Leading Australia towards a more energy-efficient and sustainable future through innovative appliance solutions</p>
+                </div>
+                <div class="hero-visual" data-aos="fade-left" data-aos-delay="500">
+                    <div class="mission-visual">
+                        <div class="sustainability-icon">
+                            <i class="fas fa-recycle"></i>
+                        </div>
+                        <div class="impact-rings">
+                            <div class="ring ring-1"></div>
+                            <div class="ring ring-2"></div>
+                            <div class="ring ring-3"></div>
+                        </div>
+                    </div>
+                </div>
             </section>
             
             <section class="content">
-                <h2>Our Mission</h2>
-                <p>At Power Appliances, we are committed to helping Australian households reduce their energy consumption while maintaining comfort and convenience. We specialize in energy-efficient appliances that meet the highest Australian standards.</p>
-                
-                <h2>Why Energy Efficiency Matters</h2>
-                <p>Australia has some of the highest electricity prices in the world, making energy efficiency crucial for household budgets. The Australian government's Minimum Energy Performance Standards (MEPS) and Energy Rating Label scheme help consumers make informed choices.</p>
-                
-                <div class="about-stats">
-                    <div class="stat-item">
-                        <h3>15+ Years</h3>
-                        <p>Serving Australian families</p>
+                <div class="mission-section" data-aos="fade-up">
+                    <div class="section-header">
+                        <h2><i class="fas fa-bullseye"></i> Our Mission</h2>
+                        <p class="section-subtitle">Transforming homes across Australia with intelligent energy solutions</p>
                     </div>
-                    <div class="stat-item">
-                        <h3>50,000+</h3>
-                        <p>Happy customers nationwide</p>
+                    
+                    <div class="mission-content">
+                        <div class="mission-text">
+                            <p>At Power Appliances, we are committed to helping Australian households reduce their energy consumption while maintaining comfort and convenience. We specialize in energy-efficient appliances that meet the highest Australian standards and deliver exceptional value to our customers.</p>
+                            
+                            <div class="mission-highlights">
+                                <div class="highlight-item" data-aos="fade-right" data-aos-delay="100">
+                                    <div class="highlight-icon">
+                                        <i class="fas fa-shield-alt"></i>
+                                    </div>
+                                    <div class="highlight-content">
+                                        <h4>Quality Assurance</h4>
+                                        <p>Every appliance undergoes rigorous testing for performance and efficiency</p>
+                                    </div>
+                                </div>
+                                <div class="highlight-item" data-aos="fade-right" data-aos-delay="200">
+                                    <div class="highlight-icon">
+                                        <i class="fas fa-handshake"></i>
+                                    </div>
+                                    <div class="highlight-content">
+                                        <h4>Customer First</h4>
+                                        <p>Personalized service and ongoing support for optimal energy savings</p>
+                                    </div>
+                                </div>
+                                <div class="highlight-item" data-aos="fade-right" data-aos-delay="300">
+                                    <div class="highlight-icon">
+                                        <i class="fas fa-globe"></i>
+                                    </div>
+                                    <div class="highlight-content">
+                                        <h4>Environmental Impact</h4>
+                                        <p>Contributing to Australia's carbon reduction goals through smart choices</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="stat-item">
-                        <h3>5 Star</h3>
-                        <p>Average energy rating across our range</p>
+                </div>
+
+                <div class="importance-section" data-aos="fade-up" data-aos-delay="300">
+                    <div class="section-header">
+                        <h2><i class="fas fa-exclamation-circle"></i> Why Energy Efficiency Matters</h2>
+                        <p class="section-subtitle">Understanding the critical role of efficient appliances in modern Australia</p>
+                    </div>
+                    
+                    <div class="importance-grid">
+                        <div class="importance-card" data-aos="zoom-in" data-aos-delay="100">
+                            <div class="card-icon">
+                                <i class="fas fa-money-bill-wave"></i>
+                            </div>
+                            <h3>High Energy Costs</h3>
+                            <p>Australia has some of the highest electricity prices in the world, making energy efficiency crucial for household budgets and long-term financial wellness.</p>
+                        </div>
+                        <div class="importance-card" data-aos="zoom-in" data-aos-delay="200">
+                            <div class="card-icon">
+                                <i class="fas fa-thermometer-three-quarters"></i>
+                            </div>
+                            <h3>Climate Action</h3>
+                            <p>With Australia's unique climate challenges, efficient appliances help reduce strain on the grid during peak demand periods.</p>
+                        </div>
+                        <div class="importance-card" data-aos="zoom-in" data-aos-delay="300">
+                            <div class="card-icon">
+                                <i class="fas fa-certificate"></i>
+                            </div>
+                            <h3>Government Standards</h3>
+                            <p>The Australian government's MEPS and Energy Rating Label scheme ensure consumers can make informed, efficient choices.</p>
+                        </div>
                     </div>
                 </div>
                 
-                <h2>Our Commitment</h2>
-                <p>We partner with leading manufacturers to bring you appliances that not only save energy but also deliver exceptional performance. Every product in our range is carefully selected to meet strict energy efficiency criteria.</p>
+                <div class="about-stats" data-aos="fade-up" data-aos-delay="400">
+                    <div class="stat-item premium" data-aos="count-up" data-aos-delay="100">
+                        <div class="stat-icon">
+                            <i class="fas fa-calendar-alt"></i>
+                        </div>
+                        <div class="stat-number">15+</div>
+                        <h3>Years of Excellence</h3>
+                        <p>Serving Australian families with dedication and expertise</p>
+                        <div class="stat-progress">
+                            <div class="progress-bar" style="width: 100%"></div>
+                        </div>
+                    </div>
+                    <div class="stat-item premium" data-aos="count-up" data-aos-delay="200">
+                        <div class="stat-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <div class="stat-number">50,000+</div>
+                        <h3>Happy Customers</h3>
+                        <p>Satisfied households nationwide saving energy daily</p>
+                        <div class="stat-progress">
+                            <div class="progress-bar" style="width: 95%"></div>
+                        </div>
+                    </div>
+                    <div class="stat-item premium" data-aos="count-up" data-aos-delay="300">
+                        <div class="stat-icon">
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div class="stat-number">5★</div>
+                        <h3>Average Rating</h3>
+                        <p>Energy efficiency across our entire product range</p>
+                        <div class="stat-progress">
+                            <div class="progress-bar" style="width: 100%"></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="commitment-section" data-aos="fade-up" data-aos-delay="500">
+                    <div class="commitment-content">
+                        <div class="commitment-text">
+                            <h2><i class="fas fa-heart"></i> Our Commitment</h2>
+                            <p>We partner with leading manufacturers to bring you appliances that not only save energy but also deliver exceptional performance. Every product in our range is carefully selected to meet strict energy efficiency criteria and our promise of quality.</p>
+                        </div>
+                        <div class="commitment-features">
+                            <div class="feature-row" data-aos="slide-right" data-aos-delay="100">
+                                <div class="feature-check">
+                                    <i class="fas fa-check-circle"></i>
+                                </div>
+                                <span>Rigorous product testing and quality assurance</span>
+                            </div>
+                            <div class="feature-row" data-aos="slide-right" data-aos-delay="200">
+                                <div class="feature-check">
+                                    <i class="fas fa-check-circle"></i>
+                                </div>
+                                <span>Ongoing customer support and energy consultations</span>
+                            </div>
+                            <div class="feature-row" data-aos="slide-right" data-aos-delay="300">
+                                <div class="feature-check">
+                                    <i class="fas fa-check-circle"></i>
+                                </div>
+                                <span>Partnerships with certified sustainable manufacturers</span>
+                            </div>
+                            <div class="feature-row" data-aos="slide-right" data-aos-delay="400">
+                                <div class="feature-check">
+                                    <i class="fas fa-check-circle"></i>
+                                </div>
+                                <span>Contribution to Australia's renewable energy goals</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="impact-chart-section" data-aos="fade-up" data-aos-delay="600">
+                    <h3><i class="fas fa-chart-line"></i> Our Environmental Impact</h3>
+                    <div class="chart-container">
+                        <canvas id="impactChart"></canvas>
+                    </div>
+                </div>
             </section>
         </div>
     </main>
@@ -127,6 +488,8 @@
         <p>&copy; 2025 Nguyen Ngoc Anh (ID: 104977768) | Energy efficiency data sourced from Australian Government Department of Energy | Content and code assistance provided by GenAI</p>
     </footer>
 
+    <!-- AOS Animation Library -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
